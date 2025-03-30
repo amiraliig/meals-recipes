@@ -1,5 +1,5 @@
 import React from 'react'
-import getMeals from '@/lib/meals'
+import { getMeals } from '@/lib/meals'
 import RecipesCards from '../components/recipes/recipesCards'
 import { Suspense } from 'react'
 const Meals = async () => {
