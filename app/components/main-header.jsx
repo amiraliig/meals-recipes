@@ -13,7 +13,7 @@ const MainHeader = () => {
             <div className='flex justify-between w-1/4'>
                 <NavLink href={`/meals`} className='text-center' >MEALS</NavLink>
                 <NavLink href={`/community`} className=''>COMMUNITY</NavLink>
-
+                <NavLink href={`/login`} className=''>Login</NavLink>
             </div>
         </div>
     )
