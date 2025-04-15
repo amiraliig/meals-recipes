@@ -5,7 +5,7 @@ const dummyMeals = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
-    image: 'https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg',
+    image: '/images/burger.jpg',
     summary:
       'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
     instructions: `
@@ -27,7 +27,7 @@ const dummyMeals = [
   {
     title: 'Spicy Curry',
     slug: 'spicy-curry',
-    image: 'https://www.kitchensanctuary.com/wp-content/uploads/2015/09/Spicy-Beef-Curry-square.jpg',
+    image: '/images/curry.jpg',
     summary:
       'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
     instructions: `
@@ -52,7 +52,7 @@ const dummyMeals = [
   {
     title: 'Homemade Dumplings',
     slug: 'homemade-dumplings',
-    image: 'https://www.tasteofhome.com/wp-content/uploads/2021/11/Homemade-Pork-Dumplings_EXPS_HCA24_265389_DR_11_30_6b.jpg',
+    image: '/images/dumplings.jpg',
     summary:
       'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
     instructions: `
@@ -74,7 +74,7 @@ const dummyMeals = [
   {
     title: 'Classic Mac n Cheese',
     slug: 'classic-mac-n-cheese',
-    image: 'https://s23209.pcdn.co/wp-content/uploads/2019/02/Baked-Mac-and-CheeseIMG_8527.jpg',
+    image: '/images/macncheese.jpg',
     summary:
       "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
@@ -99,7 +99,7 @@ const dummyMeals = [
   {
     title: 'Authentic Pizza',
     slug: 'authentic-pizza',
-    image: 'https://mypizzacorner.com/wp-content/uploads/2020/12/neapolitan-pizza-authentic.jpg',
+    image: '/images/pizza.jpg',
     summary:
       'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
     instructions: `
@@ -121,7 +121,7 @@ const dummyMeals = [
   {
     title: 'Wiener Schnitzel',
     slug: 'wiener-schnitzel',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_yzscoWdNppKccVCPkUVLpDZj6n33OlnVFQ&s',
+    image: '/images/schnitzel.jpg',
     summary:
       'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
     instructions: `
@@ -143,7 +143,7 @@ const dummyMeals = [
   {
     title: 'Fresh Tomato Salad',
     slug: 'fresh-tomato-salad',
-    image: 'https://www.recipetineats.com/tachyon/2022/07/The-Best-Tomato-Salad_0-SQ.jpg',
+    image: '/images/tomato-salad.jpg',
     summary:
       'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
     instructions: `

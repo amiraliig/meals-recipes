@@ -2,6 +2,7 @@ import React from 'react'
 import { getMeals } from '@/lib/meals'
 import RecipesCards from '../components/recipes/recipesCards'
 import { Suspense } from 'react'
+import Link from 'next/link'
 const Meals = async () => {
   const meals = await getMeals()
   return (
@@ -23,7 +24,10 @@ const MealsPage = () => {
           choose your favorite recipe and cook it yourself it is easy and fun!
         </p>
         <button className='text-white bg-[#ffa125] p-2 rounded-2xl my-5 text-2xl'>
-          Share Your Favorite Recipe
+
+          <Link href={`/meals/share`}>
+            Share Your Favorite Recipe
+          </Link>
         </button>
       </header>
       <main>

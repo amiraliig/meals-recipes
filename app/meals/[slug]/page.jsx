@@ -1,9 +1,15 @@
 import { getMeal } from '@/lib/meals'
 import React from 'react'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 const page = async ({ params }) => {
   const { slug } = await params
+  const ingredients = ["tomato", "onion", "garlic", "olive oil", "ground beef"];
+
   const meal = getMeal(slug)
+  if (!meal) {
+    notFound()
+  }
   const steps = meal.instructions.split(/\d+\.\s/).filter(step => step.trim() !== "");
   return (
     <div className='md:m-6 md:p-6 p-2 m-2'>
@@ -19,19 +25,20 @@ const page = async ({ params }) => {
         </div>
 
       </header >
-      <main className='grid grid-cols-2 justify-center bg-slate-100 rounded-2xl my-5 p-5'>
+      <main className='grid grid-cols-2 justify-center bg-slate-100 rounded-2xl my-5 p-5 gap-5'>
         <div>
           <h2 className='text-2xl'>Method</h2>
 
-          {steps.map((step, index) => <div className='border-b-2  border-[#ffaa3b9d] p-3' key={index}>
-            <h3 className='text-lg my-5'>
+          <ul>
+            {steps.map((step, index) => <li className='border-b-2  border-[#ffaa3b9d] p-3 h-24 text-lg' key={index}>
               Step{index + 1}
-            </h3> {step}</div>)}
+              {step}</li>)}
+          </ul>
         </div>
         <div>
           <h2 className='text-2xl'>Ingredients</h2>
           <ul>
-            {/* {meal.ingredients.map((ingredient, index) => <li key={index} className='text-lg my-5'>{ingredient}</li>)} */}
+            {ingredients.map((ingredient, index) => <li key={index} className='h-24 text-lg p-3 border-b-2 border-[#ffaa3b9d]'>{ingredient}</li>)}
           </ul>
         </div>
       </main>
